@@ -6,12 +6,21 @@
  * @version $Id$
  */
 
- iframe {
-	border: solid 1px red;
-	background: #ffffff;
+ body {
+	font-family: sans-serif;
  }
 
+ iframe {
+	position: absolute;
+	top: 50px;
+	border: solid 1px red;
+	background: #ffffff;
+	z-index:200;
+ }
+
+
  .advert {
+	position: relative;
 	display: inline-block;
 	border: solid 1px blue;
 	background: #f3f3f3 ;
@@ -20,30 +29,103 @@
 	text-align: center;
 	font-size: 24px;
 	font-style: strong;
+	z-index: 100;
  }
 
- .advert span {
-	font-size: 14px;
-	position: relative;
- }
+ .information {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 2px;
+	font-size: 10px;
+	color:#fff;
+	border-style: solid;
+	border-radius: 4px 0 0 0;
+	border-width: 1px 0 0 1px;
+	background-color: #0000ff;
+	border-color: #0000ff;
 
+ }
 
  .advert p {
+	position: absolute;
 	margin: 5px;
+ }
+
+ .advert p>a {
+	font-size: 12px;
  }
 
  .rectangle {
 	width:728px;
-	height:140px;
+	height:105px;
  }
 
  .square {
 	width:336px;
-	height:320px;
+	height:295px;
  }
 
  .info {
- 	text-align: center;
- 	font-size: 10px;
- 	color: red;
+	text-align: center;
+	font-size: 10px;
+	color: red;
+ }
+
+ .empty {
+	font-size: 30px;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	color: #d3d3d3;
+	z-index:150;
+ }
+
+/**
+ * ClearFix inspired from from Paul Irish - BoilerPlate
+ */
+
+ .clearfix:before,
+ .clearfix:after {
+	content:" ";
+	display:table;
+ }
+
+ .clearfix:after {
+	clear:both;
+ }
+
+ .clearfix {
+	*zoom:1;
+ }
+
+
+ .modal-over {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 80%;
+	-webkit-transition: 1ms opacity ease;
+	-moz-transition: 1ms opacity ease;
+	-ms-transition: 1ms opacity ease;
+	-o-transition: 1ms opacity ease;
+	transition: 1ms opacity ease;
+	background: rgba(0,0,0,.8);
+	z-index: 10000;
+	text-align: center;
+	display: none;
+ }
+
+ .modal-over > div {
+	position:absolute;
+	top:30%;
+	left:30%;
+	padding: 50px;
+	background-color: rgba(236,225,35,.8);
+	border-radius: 10px;
  }

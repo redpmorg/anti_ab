@@ -6,4 +6,33 @@
  * @version $Id$
  */
 
-include_once('test.phtml');
+
+
+
+if(isset($_GET["type"])) {
+
+	$type = $_GET["type"];
+
+	if($type === "premier") {
+
+		include_once('test1.phtml');
+
+	} elseif($type === "deuxieme" ) {
+
+		include_once("test2.phtml");
+
+	} else {
+
+		echo "S'il vous plait choisir un test corect!";
+		return;
+
+
+	}
+
+} else {
+
+	echo "S'il vous plait choisir un test corect!";
+	return;
+
+}
+
