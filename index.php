@@ -26,7 +26,6 @@ if(isset($_GET["type"])) {
 		echo "S'il vous plait choisir un test corect!";
 		return;
 
-
 	}
 
 } else {

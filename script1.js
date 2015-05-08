@@ -22,9 +22,12 @@
 		a_div[0].appendChild(alerte_A);
 		a_div[1].appendChild(alerte_B);
 
+		ajaxLog("enable");
+
 	} else {
 
 		hideDivVide();
+		ajaxLog("disable");
 
 	}
 

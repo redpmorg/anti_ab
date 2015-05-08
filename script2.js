@@ -8,7 +8,14 @@
  window.setTimeout(function(){
 
 	if(adsbygoogle instanceof Array) {
+
 		document.getElementsByClassName("modal-over")[0].style.display = "block";
+		ajaxLog("enable");
+
+	} else {
+
+		ajaxLog("disable");
+
 	}
 
  }, 2000);
