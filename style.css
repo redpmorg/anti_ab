@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Leonard Lepadatu (leonardlepadatu@yahoo.com)
+ * @date    2015-05-07 21:17:11
+ * @version $Id$
+ */
+
+ iframe {
+	border: solid 1px red;
+	background: #ffffff;
+ }
+
+ .advert {
+	display: inline-block;
+	border: solid 1px blue;
+	background: #f3f3f3 ;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	font-size: 24px;
+	font-style: strong;
+ }
+
+ .advert span {
+	font-size: 14px;
+	position: relative;
+ }
+
+
+ .advert p {
+	margin: 5px;
+ }
+
+ .rectangle {
+	width:728px;
+	height:140px;
+ }
+
+ .square {
+	width:336px;
+	height:320px;
+ }
+
+ .info {
+ 	text-align: center;
+ 	font-size: 10px;
+ 	color: red;
+ }
