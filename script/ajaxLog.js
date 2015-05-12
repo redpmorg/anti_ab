@@ -32,8 +32,18 @@
 		return false;
 	}
 
-	httpRequest.onreadystatechange = console.log("ready for log...");
-	httpRequest.open('POST', "../log/log.php");
-	httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-	httpRequest.send('adblock=' + encodeURIComponent(data));
+	var my_data =  {
+		"adblock" : data,
+		"my_lat" : my_lat,
+		"my_lon" : my_lon
+	}
+
+	my_data = JSON.stringify(my_data);
+
+
+	httpRequest.onreadystatechange = console.log("succesfull loging...");
+	httpRequest.open('POST', "log.php", true);
+	httpRequest.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+	httpRequest.send(my_data);
+	//'adblock=' + encodeURIComponent(data)
 }

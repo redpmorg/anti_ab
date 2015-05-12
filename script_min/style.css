@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Leonard Lepadatu (leonardlepadatu@yahoo.com)
+ * @date    2015-05-07 21:17:11
+ * @version $Id$
+ */
+body{font-family:sans-serif}iframe{position:absolute;top:50px;border:solid 1px red;background-image:url(../images/GAS.jpg);z-index:200}.information{position:absolute;bottom:0;right:0;padding:2px;font-size:10px;color:#fff;border-style:solid;border-radius:4px 0 0 0;border-width:1px 0 0 1px;background-color:#00f;border-color:#00f}.info{text-align:center;font-size:10px;color:red}.empty{font-size:30px;position:absolute;top:25%;left:0;bottom:0;right:0;overflow:hidden;color:#d3d3d3;z-index:150}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}
