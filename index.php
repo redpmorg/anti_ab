@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * @authors Leonard Lepadatu (leonardlepadatu@yahoo.com)
+ * @authors Leonard Lepadatu (lepadatu.leonard-ext@groupehn.com)
  * @date    2015-05-05 23:15:57
  * @version $Id$
  */
@@ -15,7 +15,7 @@ $baseurl = ".." . $baseurl[0];
 
 define ("BASE_URL", $baseurl);
 define ("VIEW", BASE_URL."view/");
-define ("SCRIPT", BASE_URL."script/");
+define ("SCRIPT", BASE_URL."script_min/");
 define ("LOG", BASE_URL."log/");
 
 
